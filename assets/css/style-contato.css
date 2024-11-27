@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos gerais */
+  body{
+    font-family: Roboto, sans-serif;
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: center;
+}
+
+header {
+  /* T (Top), R (Right), B (Bottom), L (Left) */
+  padding: 1.25rem 1.25rem 0 1.25rem;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* alinha horinzontalmente com espaço entre eles  */
+    align-items: center; /* alinha ao centro verticalmente*/
+}
+
+header .brand{
+    display: flex;
+    flex-direction: row;
+}
+
+header .brand img{
+    width: 2.5rem;
+}
+
+ header .brand h1{
+    font-size: 1.5rem;
+    color: #01528a;
+    font-weight: 400;
+    line-height: 2rem;
+ }
+
+   /* teste */
+
+   header nav ul {
+      display: flex;
+      list-style-type: none;
+      gap: 1rem; /* Para navegadores antigos, use margin entre os itens */
+  }
+  
+  header nav li {
+      font-weight: 300;
+      line-height: 2rem;
+  }
+  
+  header nav a {
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase;
+      padding-bottom: 1rem;
+  }
+  
+  header nav a:hover {
+      color: #0889d4;
+  }
+  
+  header nav a.active {
+      color: #0889d4;
+      font-weight: 500;
+      border-bottom: 2px solid #0889d4;
+  }
+  
+  header nav button {
+      background-color: #0889d4;
+      color: #FFF;
+      border: 0px; /* Adicionada unidade */
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 0.25rem;
+      margin-left: 1rem;
+  }
+  
+  
+  /* Main */
+  main section {
+    margin: 2rem 0;
+    padding: 1rem;
+  }
+  
+  main section h1, main section h2 {
+    margin-bottom: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
