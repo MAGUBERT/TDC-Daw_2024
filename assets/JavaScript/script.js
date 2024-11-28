@@ -15,21 +15,18 @@ function showSlide(index) {
   });
 }
 
-// Avançar para o próximo slide
+// Função para avançar para o próximo slide
 function nextSlide() {
   currentSlide = (currentSlide + 1) % slides.length; // Loop para o início
   showSlide(currentSlide);
 }
 
-// Voltar para o slide anterior
+// Função para voltar ao slide anterior
 function prevSlide() {
   currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop para o final
   showSlide(currentSlide);
 }
 
-// Configuração dos botões
+// Event Listeners para os botões
 nextButton.addEventListener('click', nextSlide);
 prevButton.addEventListener('click', prevSlide);
-
-// Alternar slides automaticamente a cada 5 segundos
-setInterval(nextSlide, 10000);

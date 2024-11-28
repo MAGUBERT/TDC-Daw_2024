@@ -21,9 +21,9 @@ body {
 
 /* Estilos do Header */
 header {
-  background-color: #000; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Logotipo */
@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcb47; /* Cor ao passar o mouse */
+  color: #ffcb47;
 }
 
 /*-----------------------------------------------/* 
@@ -59,69 +59,119 @@ nav ul li a:hover {
 .slideshow {
   position: relative;
   width: 100%;
-  height: 600px; /* Altura do banner */
+  height: 600px;
   overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
 .slide {
   position: absolute;
   top: 0;
-  left: 100%; /* Inicialmente fora da tela */
+  left: 0;
   width: 100%;
   height: 100%;
-  transition:linear 0.3s; 
-  opacity: 1;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s ease;
 }
 
 .slide.active {
-  left: 0; /* Imagem ativa visível */
   opacity: 1;
+  z-index: 2;
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ajusta a imagem sem distorção */
+  object-fit: cover;
 }
 
-/* Controles (Botões) */
-.controls {
+/* Botões de Navegação */
+button {
   position: absolute;
   top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-}
-
-button {
+  transform: translateY(-80%);
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: #fff;
   border: none;
+  border-radius: 20px;
   font-size: 2rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  z-index: 3;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.8);
+  color:#ffcb47;
+}
+
+button.prev {
+  left: 1rem;
+}
+
+button.next {
+  right: 1rem;
 }
 /*-----------------------------------------*/
 
-/* Botão de Chamada para Ação */
-button {
-  background-color: #ffcb47; /* Cor de fundo do botão */
-  color: #0889d4; /* Cor do texto */
-  border: none;
-  padding: 0.5rem 1.5rem;
-  text-transform: uppercase;
-  font-weight: 600;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-} 
+/* Main */
 
-button:hover {
-  background-color: #ffc000; /* Cor ao passar o mouse */
+/* Footer */
+footer {
+  background-color: #333;
+  color: #FFF;
+  margin-top: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 1rem;
+}
+
+footer .footer-social {
+  display: flex;
+  justify-content: center; 
+  gap: 0.5rem; 
+}
+
+footer .footer-social span {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0.5rem;
+  width: 20px; 
+  height: 20px; 
+  border-radius: 50%;
+  background-size: contain; 
+}
+
+footer .footer-social .facebook {
+  background-image: url('../img/icon-facebook.svg');
+}
+
+footer .footer-social .twitter {
+  background-image: url('../img/icon-twitter.svg');
+}
+
+footer .footer-social .instagram {
+  background-image: url('../img/icon-instagram.svg');
+}
+
+footer .footer-copyright {
+  margin-top: 0.5rem;
+}
+
+footer .footer-copyright p {
+  font-weight: 100;
+  font-size: 0.70rem;
+  text-align: center;
 }
