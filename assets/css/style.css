@@ -109,74 +109,92 @@ button.next {
 
 /* Main */
 
+.section-title {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  font-family: Arial, sans-serif;
+}
+
+.section-title h2 {
+  font-size: 28px; 
+  font-weight: bold;
+  color: #333; 
+  text-transform: uppercase;
+  letter-spacing: 2px; 
+  margin: 0; 
+}
+
 .product-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px; 
-    max-width: 1200px; 
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px; 
+  max-width: 1400px; 
+  margin: 0 auto;
 }
 
 .product-card {
-    background-color: #fff;
-    width: 280px; /* Largura fixa das caixas */
-    height: 280px; /* Altura fixa das caixas */
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    display: flex;
-    flex-direction: column; /* Elementos em coluna */
-    justify-content: space-between; /* Distribui os elementos */
+  background-color: #fff;
+  width: 400px; 
+  height: 500px; 
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  overflow: hidden;
+  text-align: center;
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
 }
 
 .product-card img {
-    width: 100%;
-    height: 180px; 
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .product-title {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-    margin: 10px 0; 
-    text-align: center;
+  font-size: 22px; 
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .schedule-button {
-    background-color: green;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 85px; 
-    transition: background-color 0.3s;
-    align-self: center; 
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 10px; 
+  padding: 15px 30px; 
+  font-size: 18px; 
+  text-decoration: none; 
+  cursor: pointer;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
 }
 
 .schedule-button:hover {
-    background-color: darkgreen;
+  background-color: darkgreen;
+  transform: scale(1.05); 
+}
+
+@media (max-width: 1024px) {
+  .product-container {
+      grid-template-columns: repeat(2, 1fr); 
+  }
 }
 
 @media (max-width: 768px) {
-    .product-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  .product-container {
+      grid-template-columns: repeat(1, 1fr);
+  }
 
-    .product-card {
-        width: 100%;
-        height: auto; 
-    }
-}
-
-@media (max-width: 480px) {
-    .product-container {
-        grid-template-columns: 1fr; 
-    }
+  .product-card {
+      width: 100%; 
+      height: auto;
+  }
 }
