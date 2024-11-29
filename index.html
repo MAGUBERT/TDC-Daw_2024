@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
   
   <link rel="stylesheet" href="./assets/css/normalize.css"/>
+
+  <link rel="stylesheet" href="./assets/css/padrao.css"/>
   
   <link rel="stylesheet" href="./assets/css/style.css"/>
 
@@ -27,20 +29,18 @@
     </div>
   </header>
 
-  <!-- Slideshow de Banners -->
+  <!--Banner-->
   <div class="slideshow">
     <div class="slide active">
-      <img src="./assets/img/banner.jpg" alt="Banner 1">
+      <img src="./assets/img/banners/banner.jpg" alt="Banner 1">
     </div>
     <div class="slide">
-      <img src="./assets/img/banner2.jpg" alt="Banner 2">
+      <img src="./assets/img/banners/banner2.jpg" alt="Banner 2">
     </div>
     <div class="slide">
-      <img src="./assets/img/banner3.jpg" alt="Banner 3">
+      <img src="./assets/img/banners/banner3.jpg" alt="Banner 3">
     </div>
   </div>
-
-  <!-- Botões para navegação manual (opcional) -->
   <div class="controls">
     <button class="prev">❮</button>
     <button class="next">❯</button>
@@ -48,27 +48,74 @@
 
   <script src="./assets/JavaScript/script.js"></script>
 </body>
+
+
+  <div class="info-bar">
+    <div class="info-item">
+        <img src="./assets/img/bar/profissional.png" alt="Envios">
+        <div>
+            <h4>Serviços profissionais</h4>
+            <p>Atendimento para Coronel Vivida e Pato Branco (PR)</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <img src="./assets/img/bar/cartao.png" alt="Parcelamento">
+        <div>
+            <h4>Em até 6x s/juros</h4>
+            <p>Com cartão de crédito</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <img src="./assets/img/bar/agendamento.png" alt="Trocas">
+        <div>
+            <h4>Agendamento</h4>
+            <p>Grátis sem sair de casa</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <img src="./assets/img/bar/Whatsapp.png" alt="WhatsApp">
+        <div>
+            <h4>Agendamento WhatsApp</h4>
+            <p>(46)99920-8570</p>
+        </div>
+    </div>
+</div>
+
 </html>
 
   <!-- Main -->
   <main>
-    <!-- Seção de Introdução -->
-    <section id="introducao">
-      <h1>Bem-vindo ao Meu Site</h1>
-      <p>Esta é uma breve introdução sobre o projeto.</p>
-    </section>
-
-    <!-- Seção de Conteúdo Principal -->
-    <section id="conteudo">
-      <h2>Sobre Nós</h2>
-      <img src="assets/banner.jpg" alt="Imagem ilustrativa">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
-    </section>
+    <body>
+      <div class="product-container">
+          <div class="product-card">
+              <img src="./assets/img/servicos/polimento-carro.jpg" alt="Produto 1">
+              <div class="divider"></div>
+              <div class="product-title">Polimento na Pintura do Carro</div>
+              <button class="schedule-button">Pedir um orçamento</button>
+          </div>
+  
+          <div class="product-card">
+              <img src="./assets/img/servicos/polimento-farol.jpg" alt="Produto 2">
+              <div class="divider"></div>
+              <div class="product-title">Polimento Farol de Carro</div>
+              <button class="schedule-button">Agendar</button>
+          </div>
+  
+          <div class="product-card">
+              <img src="./assets/img/servicos/lavagem-automotiva.jpg" alt="Produto 3">
+              <div class="divider"></div>
+              <div class="product-title">Lavagem Automotiva</div>
+              <button class="schedule-button">Agendar</button>
+          </div>
+  
+          <div class="product-card">
+              <img src="./assets/img/servicos/higienizacao-interna.jpg" alt="Produto 4">
+              <div class="divider"></div>
+              <div class="product-title">Higienização interna</div>
+              <button class="schedule-button">Pedir um orçamento</button>
+          </div>
+      </div>
+    </body>
   </main>
 
   <!--Footer -->

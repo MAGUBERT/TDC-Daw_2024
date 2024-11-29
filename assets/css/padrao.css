@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo geral */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container para centralizar conteúdo */
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Estilos do Header */
+  header {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Logotipo */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Navegação */
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcb47;
+  }
+
+/* Footer */
+
+  footer {
+    background-color: #333;
+    color: #FFF;
+    margin-top: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 1rem;
+  }
+  
+  footer .footer-social {
+    display: flex;
+    justify-content: center; 
+    gap: 0.5rem; 
+  }
+  
+  footer .footer-social span {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0.5rem;
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    background-size: contain; 
+  }
+  
+  footer .footer-social .facebook {
+    background-image: url('../img/footer/icon-facebook.svg');
+  }
+  
+  footer .footer-social .twitter {
+    background-image: url('../img/footer/icon-twitter.svg');
+  }
+  
+  footer .footer-social .instagram {
+    background-image: url('../img/footer/icon-instagram.svg');
+  }
+  
+  footer .footer-copyright {
+    margin-top: 0.5rem;
+  }
+  
+  footer .footer-copyright p {
+    font-weight: 100;
+    font-size: 0.70rem;
+    text-align: center;
+  }
+  
+  
