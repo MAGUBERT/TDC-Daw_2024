@@ -1,6 +1,6 @@
 
 
-/* Faixa amarela (Seção de Introdução) */
+
 #introducao {
   text-align: center;
   padding: 0.25rem 0;
@@ -19,7 +19,7 @@
   margin: 0 auto; 
 }
 
-/* Seções */
+
 section {
   padding: 2rem 0;
 }
@@ -58,7 +58,7 @@ section ul li::before {
   font-size: 1.2rem;
 }
 
-/* Layout para Equipe e Missão */
+
 #equipe, #missao {
   display: flex;
   flex-wrap: wrap;

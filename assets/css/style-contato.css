@@ -1,11 +1,38 @@
 
-  
-  /* Main */
-  main section {
-    margin: 2rem 0;
-    padding: 1rem;
-  }
-  
-  main section h1, main section h2 {
-    margin-bottom: 1rem;
-  }
+#contato {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contato h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ff9800;
+}
+
+#contato p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.contact-options {
+  margin: 1.5rem 0;
+}
+
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+  background-color: #1DA955;
+}

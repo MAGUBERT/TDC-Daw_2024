@@ -1,4 +1,4 @@
-/* Configuração do Banner */
+
 .slideshow {
   position: relative;
   width: 100%;
@@ -29,7 +29,7 @@
   object-fit: cover;
 }
 
-/* Botões Banner */
+
 button {
   position: absolute;
   top: 50%;
