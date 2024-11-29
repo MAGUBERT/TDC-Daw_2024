@@ -86,16 +86,3 @@ section ul li::before {
   border-radius: 8px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Footer */
-footer {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 3rem;
-}
-
-footer p {
-  font-size: 0.9rem;
-}
