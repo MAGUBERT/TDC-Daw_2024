@@ -1,12 +1,101 @@
 
- 
- /* Main */
- main section {
-   margin: 2rem 0;
-   padding: 1rem;
- }
- 
- main section h1, main section h2 {
-   margin-bottom: 1rem;
- }
- 
+
+/* Faixa amarela (Seção de Introdução) */
+#introducao {
+  text-align: center;
+  padding: 0.25rem 0;
+  background: linear-gradient(to right, #ffcb47, #ffa500);
+  color: #fff;
+}
+
+#introducao h1 {
+  font-size: 2rem;
+  margin-bottom: 0.25rem; 
+}
+
+#introducao p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+/* Seções */
+section {
+  padding: 2rem 0;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ff9800;
+}
+
+section p, section ul {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+  color: #555;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+}
+
+section ul li {
+  margin-bottom: 1rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+section ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffcb47;
+  font-size: 1.2rem;
+}
+
+/* Layout para Equipe e Missão */
+#equipe, #missao {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#equipe .text, #missao .text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+#equipe .image, #missao .image {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+#equipe img, #missao img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
